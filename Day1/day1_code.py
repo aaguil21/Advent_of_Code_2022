@@ -1,4 +1,7 @@
 #Day 1 of Advent of Code challenge 
+import os 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 
 filename = "input_Day1.txt"
 

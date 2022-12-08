@@ -1,19 +1,11 @@
-import os 
-
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-filename = "input_day6.txt"
-
-with open(filename) as f:
-    x = f.read()
-
-signal = list(x)[:-1]
+import pathlib
 
 def marker(code, chars):
     for i in range(len(code)-3):
-        sub = set(code[i:i+chars])
-        if len(sub) == chars:
+        if  len(set(code[i:i+chars])) == chars:
             return i+chars
 
-print(f"First message marker after character {marker(signal,4)}")
-print(f"First message marker after character {marker(signal,14)}")
+if __name__ == '__main__':
+    signal = (pathlib.Path(__file__).parent / "input_day6.txt").read_text().strip()
+    print(f"First start-of-packet marker after character {marker(signal,4)}")
+    print(f"First start-of-message marker after character {marker(signal,14)}")

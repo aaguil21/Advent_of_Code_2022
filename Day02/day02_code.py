@@ -1,7 +1,7 @@
 import os 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-filename = "input_day2.txt"
+filename = "input_day02.txt"
 
 x = [l.strip() for  l in open(filename)]
 split_text = lambda x: x.split()

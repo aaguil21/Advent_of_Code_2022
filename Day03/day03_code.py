@@ -5,7 +5,7 @@ import numpy as np
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-filename = "input_day3.txt"
+filename = "input_day03.txt"
 
 x = [l.strip() for  l in open(filename)]
 

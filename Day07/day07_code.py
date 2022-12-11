@@ -29,4 +29,4 @@ class DirTree():
 """
 
 if __name__ == '__main__':
-    commands = split_list("input_day7.txt")
+    commands = split_list("input_day07.txt")

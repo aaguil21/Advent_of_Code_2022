@@ -3,7 +3,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-filename = "input_Day1.txt"
+filename = "input_day01.txt"
 
 cal = [l.strip() for  l in open(filename)]
 

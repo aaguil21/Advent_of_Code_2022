@@ -53,6 +53,6 @@ def row_view(x, array) -> int:
 
 
 if __name__ == '__main__':
-    trees = split_list("input_day8.txt")
+    trees = split_list("input_day08.txt")
     print(f"The number of visible trees is {visible_trees(trees)}")
     print(f"The highest scenic score is {tree_view(trees)}")

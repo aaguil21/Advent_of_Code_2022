@@ -6,7 +6,7 @@ import copy
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-filename = "input_day5.txt"
+filename = "input_day05.txt"
 input = [l for  l in open(filename)]
 x = ('\n').join(input).split('\n\n')
 y = ('\n').join(x).split('\n\n')

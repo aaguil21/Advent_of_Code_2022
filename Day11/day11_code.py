@@ -20,6 +20,7 @@ def split_input(filename: str) -> list:
     for i, monkey in enumerate(y):
         split_list = lambda x: x.split()
         data = list(map(split_list, ('').join(y[0]).split('\n')))
+<<<<<<< HEAD
         name = " ".join([data[0][0], data[0][1][0]])
         items = 
         test = None
@@ -29,6 +30,22 @@ def split_input(filename: str) -> list:
 
     return monkeys
 
+=======
+        name = " ".join(data[0][0], data[0][1][0])
+        items = 
+
+        monkeys[i].append(monkey(name, items, test, cond1, cond2))
+
+    return monkeys
+
+class monkey():
+    def __init__(self, name, items, test, cond1, cond2):
+        self.name = items
+        self.items = items
+        self.test = test
+        self.cond1 = cond1
+        self.cond2 = cond2
+>>>>>>> 974a2076805ac2ca80dc60a82dd55966ccc5ecf2
 
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
